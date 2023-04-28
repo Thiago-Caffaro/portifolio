@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+*{
+    margin: 0px;
+    font-family: var(--fonte-padrao);
+}
+:root{
+    --cor-fundo: rgb(192, 192, 192);
+    --fonte-padrao: 'Mukta', sans-serif;
+    --fonte-hello: 'Amatic SC', cursive;
+}
+body{
+    background-color: var(--cor-fundo);
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul{
+    border: solid black 3px;
+    padding: 20px;
+    list-style: none;
+}
+li{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+button{
+    background-color: transparent;
+    margin: 10px;
+    border: none;
+}
+button, img{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}

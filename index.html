@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li style="margin-left: 0px;"><a href="paginas/habilidades/index.html">Habilidades</a></li>
+                <li><a href="paginas/formacoes/index.html">Formações</a></li>
+                <li><a href="paginas/projetos/index.html">Projetos</a></li>
+                <li><a href="paginas/contato/index.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <div id="face">
+            <img src="images/thiago.png" alt="thiago">
+        </div>
+        <div id="seta"><p id="arrow-text">Minhas conquistas!</p></div>
+        <div id="box">
+            <p id="hello"><span id="boa"></span> me chamo Thiago Caffaro Lima, <br>
+            tenho <span id="idade"></span> anos e quero lhe mostrar o que tenho à oferecer.<br>Em meu portfólio, 
+            você poderá encontrar alguns dos projetos que desenvolvi e que irei desenvolver ao longo da minha 
+            carreira, assim como informações mais detalhadas sobre minha formação e experiências profissionais.
+        </p>
+        </div>
+    </main>
+    <div class="separador"></div>
+    <main id="certificados">
+        <div class="certificado" data-aos="fade-up">
+            <h1 class="titulos-cert">Curso em vídeo - Python3 Mód1</h1>
+            <a href="certificados/Thiago-Caffaro-Python-3-8211-Mundo-1-40-Horas-Certificado-Curso-em-Video.pdf" target="_blank"><img class="logo" src="images/curso_em_video.jpg" alt="logo curso em video"></a>
+        </div>
+        <div class="certificado" data-aos="fade-up">
+            <h1 class="titulos-cert">Curso em vídeo - Python3 Mód2</h1>
+            <a href="certificados/Thiago-Caffaro-Python-3-8211-Mundo-2-40-Horas-Certificado-Curso-em-Video.pdf" target="_blank"><img class="logo" src="images/curso_em_video.jpg" alt="logo curso em video"></a>
+        </div>
+        <div class="certificado" data-aos="fade-up">
+            <h1 class="titulos-cert">Curso em vídeo - HTML/CSS Mód1</h1>
+            <a href="certificados/Thiago-Caffaro-Curso-HTML5-e-CSS3-modulo-1-de-5-40-HORAS-Certificado-Curso-em-Video.pdf" target="_blank"><img class="logo" src="images/curso_em_video.jpg" alt="logo curso em video"></a>
+        </div>
+        <div class="certificado" data-aos="fade-up">
+            <h1 class="titulos-cert">Curso em vídeo - HTML/CSS Mód2</h1>
+            <a href="certificados/Thiago-Caffaro-Curso-HTML5-e-CSS3-modulo-2-de-5-40-HORAS-Certificado-Curso-em-Video.pdf" target="_blank"><img class="logo" src="images/curso_em_video.jpg" alt="logo curso em video"></a>
+        </div>
+        <div class="certificado" data-aos="fade-up">
+            <h1 class="titulos-cert">DIO - Pensamento Computacional</h1>
+            <a href="certificados/6D51FEA3.pdf" target="_blank"><img class="logo" src="images/DIO_logo.png" alt="logo curso em video"></a>
+        </div>
+        <div class="certificado" data-aos="fade-up">
+            <h1 class="titulos-cert">DIO - Git e Github</h1>
+            <a href="certificados/63954A4F.pdf" target="_blank"><img class="logo" src="images/DIO_logo.png" alt="logo curso em video"></a>
+        </div>
+        <div class="certificado" data-aos="fade-up">
+            <h1 class="titulos-cert">DIO - JS Mód1</h1>
+            <a href="certificados/E9E15D12.pdf" target="_blank"><img class="logo" src="images/DIO_logo.png" alt="logo curso em video"></a>
+        </div>
+        <div class="certificado" data-aos="fade-up">
+            <h1 class="titulos-cert">OnByte - Curso presencial</h1>
+            <a href="certificados/onByte.pdf" target="_blank"><img class="logo" src="images/on-byte.png" alt="logo curso em video"></a>
+        </div>
+        <div class="certificado" data-aos="fade-up">
+            <h1 class="titulos-cert">IW - Inglês Nível Médio</h1>
+            <a href="certificados/iw.pdf" target="_blank"><img class="logo" src="images/IW-logo.png" alt="logo curso em video"></a>
+        </div>
+        <div class="certificado" data-aos="fade-up">
+            <h1 class="titulos-cert">IW - Inglês Business</h1>
+            <a href="certificados/iw-business.pdf" target="_blank"><img class="logo" src="images/IW-logo.png" alt="logo curso em video"></a>
+        </div>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+<script>
+    now = new Date
+    let min = now.getMinutes();
+    let hora = now.getHours();
+    let dia = now.getDate();
+    let mes = now.getMonth() + 1;
+    let ano = now.getFullYear();
+    var boa = document.querySelector("#boa");
+    var idade = document.querySelector("#idade");
+
+    if (hora < 12){
+        boa.innerHTML = "Bom dia!"
+    }    
+    else if (hora > 12 && hora < 18){
+        boa.innerHTML = "Boa tarde!"
+    }
+    else if (hora > 18 || hora == 18 && min > 0){
+        boa.innerHTML = "Boa noite!"
+    }
+    if (mes != 1 && dia >= 18){
+        idade.innerHTML = ano - 2007;
+    }
+</script>
+</html>
