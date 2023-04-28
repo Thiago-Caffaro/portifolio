@@ -1,0 +1,16 @@
+#box{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+#box>#frase{
+    font-size: 40px;
+    margin-bottom: 30px;
+    border: none;
+    width: 850px;
+    height: 180px;
+}
+#refresh, #copy, #translate{
+    height: 50px;
+    width: 150px;
+}

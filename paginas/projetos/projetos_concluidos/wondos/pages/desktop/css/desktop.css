@@ -1,0 +1,15 @@
+#desktop{
+    height: calc(100vh - 52px);
+    min-height: 100%;
+    background-image: url(../images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#desktop>#apps>button:hover{
+    background-color: rgba(74, 74, 74, 0.515);
+    cursor: pointer;
+}
+.nameFolder{
+    color: aliceblue;
+}

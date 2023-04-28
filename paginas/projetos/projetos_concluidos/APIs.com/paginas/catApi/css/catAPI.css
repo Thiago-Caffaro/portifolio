@@ -1,0 +1,31 @@
+.maincontent{
+    padding-top: 0%;
+    padding-left:0%;
+}
+  
+.col {
+    border: black solid 4px;
+    border-radius: 3px;
+}
+
+.col-lg{
+    overflow: hidden;
+    margin: 10px 0;
+    position: relative;
+    height: 500px;
+    width: 500px;
+}
+.col-lg:hover{
+    transform: scale(110%);
+    transition: 1.5s;
+}
+  
+.col-lg img{
+    height: 500px;
+    width: 500px;
+}
+.imgrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

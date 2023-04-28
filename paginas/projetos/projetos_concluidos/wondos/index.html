@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <script>
+        function send(){
+            let user = document.forms["loginForm"]["fUser"].value;
+            let password = document.forms["loginForm"]["fPassword"].value;
+            if(user == 'admin' && password == 'admin'){
+                window.open("pages/desktop/desktop.html");
+            }else{
+                alert("Dados incorretos!");
+            }
+        }
+    </script>
+    <div id="login">
+        <form name="loginForm">
+            <p>Usuário: admin <br> Senha: admin</p>
+            <label for="fname">Usuário</label><br>
+            <input type="text" id="user" name="fUser"><br>
+            <label for="lname">Senha</label><br>
+            <input type="password" id="password" name="fPassword">
+            <input type="submit" id="loginBnt" onclick="send()"></input>
+        </form>
+    </div>
+</body>
+</html>

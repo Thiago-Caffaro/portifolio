@@ -1,0 +1,49 @@
+#barra-inferior{
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+}#barra-inferior>#botao-logo{
+    display: flex;
+    flex-direction: row;
+}
+#barra-inferior>#botao-logo>p{
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+#barra-inferior>#botao-logo>img{
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 40px;
+}#barra-inferior>#apps{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}.app{
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform .2s;
+    position:static;
+
+}#barra-inferior>#apps>button>.app:hover{
+    transform: scale(1.2);
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+#barra-inferior>#ferramentas{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}#barra-inferior>#ferramentas>#internet>img{
+    height: 30px;
+}#barra-inferior>#ferramentas>#horario, #data>p{
+    text-align: center;
+    margin-top: 10px;
+}#barra-inferior>#ferramentas>#temperatura{
+    margin-top: 8px;
+}#barra-inferior>#ferramentas>.ferramenta{
+    margin-left: 6px;
+    margin-right: 6px;
+}

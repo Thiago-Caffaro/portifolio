@@ -1,0 +1,40 @@
+.box {
+    background: transparent;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #box__content {
+    background: transparent;
+    height: 600px;
+    width: 567px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 700ms ease-in-out;
+    border: solid black 1px;
+
+  }
+  .box__front>img, .box__back>img{
+    width: 567px;
+    height: 600px;
+    border-radius: 5px;
+
+  }
+  
+  .box__front,
+  .box__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .box__back {
+    transform: rotateY(180deg);
+  }
+  
+  .flip {
+    transform: rotateY(180deg);
+  }
+  

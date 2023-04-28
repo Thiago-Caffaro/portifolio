@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+@font-face {
+    font-family:"Linguagemparanormal";
+    src: local("Linguagemparanormal"), url("../../fonts/Linguagemparanormal-Regular.ttf");
+}
+@font-face {
+    font-family:"Sigilos Do Outro Lado";
+    src: local("Sigilos Do Outro Lado"), url("../../fonts/SigilosDoOutroLado-Regular.ttf");
+}
+*{
+    font-family: 'Chivo Mono', monospace;
+}
+body{
+    background-color: black;
+    color:white;
+}
+#console{
+    font-size: 25px;
+}
+.resposta{
+    font-family:"Sigilos Do Outro Lado";
+    font-size: 30px;
+}
+.sinais{
+    font-family:"Linguagemparanormal";
+}

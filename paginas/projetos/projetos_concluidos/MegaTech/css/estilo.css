@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+:root{
+    --fonte-titulo: 'Open Sans', sans-serif;
+    --fonte-nav: 'Quicksand', sans-serif;
+    --fonte-main: 'Open Sans', sans-serif;
+    --tamanho-hamburger: 25px;  
+    --cor-fonte-main: #3A3A3A;
+    --cor-header: #1E1F21;
+    --cor-barra-pesquisa: #424958;
+    --cor-body: #EFEFEF;
+    --cor-hover-bloco: #3a3f49;
+    --cor-hover-letra: #FF6A81;
+    --cor-hamburger: whitesmoke;
+    --cor-fundo-article: #FFFFFF;
+}
+body{
+    background-color: var(--cor-body);    
+    margin: 0px;
+}
+header{
+    background-color: var(--cor-header);
+    margin-bottom: 10px;
+    justify-content: space-between;
+    display: flex;
+}
+header>a>picture>#logo-mt{
+    margin: 20px;
+}
+#caixa-pesquisa{
+    position: absolute;
+    height: 40px;
+    background-color: var(--cor-barra-pesquisa);
+    border-radius: 15px;
+    margin-top: 56px;
+    padding: 10px;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.search-btn{
+    display: flex;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 2s;
+    align-items: center;
+    justify-content: center;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    color: aliceblue;
+    float: left;
+    padding: 0;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 550px;
+}
+#caixa-pesquisa:hover > .search-txt{
+    padding: 0 6px;
+}
+#caixa-pesquisa:hover > .search-bnt{
+    background-color: #8e9696;
+}
+header>nav{
+    font-family: var(--fonte-nav);
+    height: 70px;
+    margin: 20px;
+    margin-right: 70px;
+    font-size: 18px;
+    display: flex;
+    gap: 8px;
+}
+header>nav>ul{
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+}
+header>nav>ul>li>a{
+    text-decoration: none;
+    display: block;
+    color: aliceblue;   
+    padding: 20px;
+    padding-bottom: 27px;
+    transition: .3s;
+}
+header>nav>ul>li>a:hover{
+    color: var(--cor-hover-letra);
+}
+#btn-mobile{
+    display: none;
+}
+main{
+    border-radius: 8px;
+    max-width: 850px;
+    margin: auto;
+    padding-top: 15px;
+}
+
+main>h1{
+    font-family: var(--fonte-titulo);
+    font-size: 35px;
+}
+article{
+    margin-bottom: 20px;
+    background-color: var(--cor-fundo-article);
+    padding: 20px;
+    text-align: left;
+}
+article>a>.titulo{
+    font-family: var(--fonte-titulo);
+    padding-left: 10px;
+    font-size: 30px;
+}
+article>p{
+    font-family: var(--fonte-main);
+    color: var(--cor-fonte-main);
+    padding-left: 10px;
+    margin-top: 0px;
+    font-size: 20px;
+}
+article>h2{
+    font-family: var(--fonte-titulo);
+    font-size: 30px;
+    margin-top: 30px;
+}
+article>a{
+    display: inline-block;
+    font-family: var(--fonte-titulo);
+    text-decoration: none;
+    color: #52A6E7;
+}
+
+article>ol>li{
+    font-family: var(--fonte-titulo);
+    font-size: 30px;
+    margin-top: 30px;
+}
+article>ol>p{
+    font-family: var(--fonte-main);
+    color: var(--cor-fonte-main);
+    padding-left: 10px;
+    margin-top: 0px;
+    font-size: 20px;
+}
+#logo-mt-xxp{
+    display: none;
+}
+
+@media (max-width:1700px){
+    #caixa-pesquisa{
+        left: 39%;
+        transition: .5s;
+    }
+}
+@media (max-width: 1550px){
+    .search-txt{
+        width: 350px;
+    }
+}
+@media (max-width:1340px){
+    .search-txt{
+        width: 250px;
+    }
+}
+@media (max-width:1270px){
+    .search-txt{
+        width: 200px;
+    }
+}
+/*Comprime a barra de pesquisa quando passa de 1220px*/
+@media (max-width: 1220px){     
+    #logo-mt{
+        right: 0px;
+    }
+    .search-txt{
+        width: 300px;
+    }
+    #caixa-pesquisa{
+        margin-top: 40px;
+        left: 50%;
+        transition: .5s;
+        width: 440px;
+    }
+    #caixa-pesquisa:hover > .search-txt{
+        padding: 0 6px;
+    }
+    
+    header > nav{
+        margin: 0px;
+        margin-right: 20px;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: .5s;
+        padding: 0px;
+    }
+    #menu>li>a{
+        border-bottom: 2px solid rgba(66, 66, 66, 0.253);
+        padding: 16px 0;
+        margin: 0 16px;
+    }
+    header{
+        height: 80px;
+    }
+    #nav{
+        font-size: 19px;
+    }
+    #nav.active #menu{
+        background-color: var(--cor-header);
+        height: calc(100vh - 70px);
+        visibility: visible;
+        width: 36;
+    }
+    #btn-mobile{
+        display: flex;
+        padding: 8px 16px;
+        cursor: pointer;
+        background-color: var(--cor-header);
+        border: none;
+        padding-top: 28px;
+    }
+    #hamburger{
+        border-top: 2px solid var(--cor-hamburger);
+    }
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: var(--cor-hamburger);
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    main{
+        padding: 20px;
+    }
+    
+}
+@media (max-width: 940px){
+    .search-txt{
+        width: 350px;
+    }
+    #caixa-pesquisa{
+        left: 58%;
+    }
+}
+@media (max-width: 775px){
+    .search-txt{
+        width: 150px;
+    }
+    #caixa-pesquisa{
+        width: 250px;
+    }
+}
+@media (max-width:600px){
+    #caixa-pesquisa{
+        width: 40px;
+        left: 57%;
+    }
+    #caixa-pesquisa:hover{
+        width: 120px;
+    }
+    #caixa-pesquisa:hover .search-txt{
+        width: 43px;
+        
+    }
+    .search-txt{
+        width: 0px;
+    }
+
+}
+@media (max-width: 430px){
+    #logo-mt{
+        display: none;
+    }
+    #caixa-pesquisa{
+        width: 40px;
+        left: 55%;
+    }
+    a > #logo-mt-xxp{
+        display: flex;
+        width: 60px;
+        height: 45px;
+        padding-top: 15px;
+        padding-left: 25px;
+        right: 50%;
+    }
+}

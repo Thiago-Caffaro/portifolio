@@ -1,0 +1,84 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../global.css">
+    <link rel="stylesheet" href="css/janela.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/barra-inferior.css">
+    <title>Desktop</title>
+</head>
+
+<body>
+    <script src="js/script.js"></script>
+    <div id="desktop">
+        <p style="display: none;">Olá <img src="images/unknown.png"></p>
+        <ul id="apps">
+            <button onclick="abrirPasta('arquivo'), abrirDiretorio('Lixeira')">
+                <li class="app"><img src="images/icons/icons8-empty-trash-48.png"><p class="nameFolder">Lixeira</p></li>
+            </button>
+            <button onclick="abrirImagem('images/cato.png', 'novo')">
+                <li class="app"><img src="images/icons/icons8-image-file.svg"><br><p class="nameFolder">Meu amor1</p></li>
+            </button>
+            <button onclick="abrirVideo('images/pexe.mp4')">
+                <li class="app"><img src="images/icons/icons8-video-48.png"><br><p class="nameFolder">Meu amor2</p></li>
+            </button>
+            <button onclick="abrirVideo('images/miau.mp4')">
+                <li class="app"><img src="images/icons/icons8-video-48.png"><br><p class="nameFolder">Meu amor3</p></li>
+            </button>
+            <button onclick="abrirAudio('ult.mp3')">
+                <li class="app"><img src="images/icons/icons8-audio-100.png"><br><p class="nameFolder">Corra</p></li>
+            </button><br>
+            <button onclick="abrirPasta('arquivo'), user('felipe')">
+                <li class="app"><img src="images/icons/icons8-folder.svg"><p class="nameFolder">Felipe Oliveira</p></li>
+            </button>
+            <button onclick="abrirPasta('arquivo'), user('sayonara')">
+                <li class="app"><img src="images/icons/icons8-folder.svg"><p class="nameFolder">Sayonara Sato</p></li>
+            </button>
+            <button onclick="abrirPasta('arquivo'), user('cristopher')">
+                <li class="app"><img src="images/icons/icons8-folder.svg"><p class="nameFolder">Cristopher</p></li>
+            </button>
+            <button onclick="abrirPasta('arquivo'), user('himeno')">
+                <li class="app"><img src="images/icons/icons8-folder.svg"><p class="nameFolder">Himeno</p></li>
+            </button>
+            <br>
+            <button onclick="abrirPasta('arquivo'), user('regina')">
+                <li class="app"><img src="images/icons/icons8-folder.svg"><p class="nameFolder">Regina</p></li>
+            </button>
+        </ul>
+        <div id="placeHolderJanela"></div>
+    </div>
+    <div id="barra-inferior">
+        <div id="botao-logo" onclick="abrirWondo()">
+            <img src="images/icons/icons8-share.svg"><p>WONDOS</p>
+        </div>
+        <ul id="apps">
+            <button onclick="abrirPasta('arquivo')">
+                <li class="app"><img src="images/icons/icons8-folder.svg"></li>
+            </button>
+            <button onclick="abrirPrograma('heardfy')">
+                <li class="app"><img src="images/icons/hearfy.png" style="height: 40px; border-radius: 5px;"></li>
+            </button>
+            <button onclick="abrirPrograma('chromo')">
+                <li class="app"><img src="images/icons/chromo.png" style="height: 40px; border-radius: 5px;"></li>
+            </button>
+            <button onclick="abrirPrograma('xess')">
+                <li class="app"><img src="images/icons/xess.png" style="height: 40px; border-radius: 5px;"></li>
+            </button>
+            <button onclick="abrirPrograma('cmd')">
+                <li class="app"><img src="images/icons/cmd.png" style="height: 40px; border-radius: 5px;"></li>
+            </button>
+        </ul>
+        <ul id="ferramentas">
+            <li id="temperatura" class="ferramenta"><p>Temp:<br>24°C</p></li>
+            <li id="internet" class="ferramenta"><img src="images/icons/icons8-wi-fi-disconnected-48.png" alt=""></li>
+            <li id="horario" class="ferramenta"><p>7:43 PM</p></li>
+            <li id="data" class="ferramenta"><p>18/12/2022</p></li>
+        </ul>
+    </div>
+</body>
+</html>
+

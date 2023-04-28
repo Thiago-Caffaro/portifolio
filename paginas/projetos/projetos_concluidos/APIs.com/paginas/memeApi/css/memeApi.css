@@ -1,0 +1,25 @@
+#box{
+    border: black 2px solid;
+    display: flex;
+    align-items: center;
+}
+textarea{
+    max-width: 375px;
+}
+p, textarea{
+    margin: 10px;
+    font-size: 30px;
+}
+input[type="file"]{
+    display: none;
+}
+#uploadBnt{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: solid black 2px;
+    cursor: pointer;
+}
+#rightBox{
+    margin:100px;
+    height: 100%;
+}

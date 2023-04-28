@@ -1,0 +1,67 @@
+
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#">
+          <img src="../../images/icons/hearfyLogo.png" alt="Logo"/>
+        </a>
+      </div>
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fa-home"></span>
+              <span>Início<br><span class="preguica">(Sem orçamento para adicionar!)</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa fas fa-book"></span>
+              <span>Sua Biblioteca<br><span class="preguica">(Sem orçamento para adicionar!)</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button id="stopBnt" onclick="tocarMusica('');">Parar musica atual</button>
+
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fas fa-plus-square"></span>
+              <span>Criar playlist<br><span class="preguica">(Sem orçamento para adicionar!)</span></span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="#">
+              <span class="fa fas fa-heart"></span>
+              <span>Músicas Curtidas<br><span class="preguica">(Sem orçamento para adicionar!)</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="topbar">
+        <div class="prev-next-buttons">
+          <button type="button" class="fa fas fa-chevron-left"></button>
+          <button type="button" class="fa fas fa-chevron-right"></button>
+        </div>
+      </div>
+
+      <div id="spotify-playlists">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <audio id="audioPlayer" autoplay></audio>
+        <h2>Suas Músicas</h2>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/23cecef777.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+
+  </body>

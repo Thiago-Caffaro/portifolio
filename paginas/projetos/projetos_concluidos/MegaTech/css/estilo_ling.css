@@ -1,0 +1,13 @@
+:root{
+    --cor-fonte-main: #8e9696;
+    --fonte-titulo: 'Overpass', sans-serif;
+}
+li.sub_titulo>a{
+    font-size: 35px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-fonte-main);
+    text-decoration: none;
+}
+#lang>li{
+    margin-top: 30px;
+}
