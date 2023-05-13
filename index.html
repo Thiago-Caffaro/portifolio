@@ -81,27 +81,4 @@
         AOS.init();
     </script>
 </body>
-<script>
-    now = new Date
-    let min = now.getMinutes();
-    let hora = now.getHours();
-    let dia = now.getDate();
-    let mes = now.getMonth() + 1;
-    let ano = now.getFullYear();
-    var boa = document.querySelector("#boa");
-    var idade = document.querySelector("#idade");
-
-    if (hora < 12){
-        boa.innerHTML = "Bom dia!"
-    }    
-    else if (hora > 12 && hora < 18){
-        boa.innerHTML = "Boa tarde!"
-    }
-    else if (hora > 18 || hora == 18 && min > 0){
-        boa.innerHTML = "Boa noite!"
-    }
-    if (mes != 1 && dia >= 18){
-        idade.innerHTML = ano - 2007;
-    }
-</script>
 </html>
